@@ -47,13 +47,19 @@ This project implements a dynamic knowledge base system that fetches, processes,
 ## Installation
 
 <!--start code-->
+
 Install dependencies:
+
     pip install -r requirements.txt
+    
 <!--end code-->
 
 <!--start code-->
+
 Run the Streamlit app:
+
     streamlit run app.py
+    
 <!--end code-->
 
 ## How It Works
