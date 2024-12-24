@@ -8,27 +8,27 @@ This project implements a dynamic knowledge base system that fetches, processes,
 
 1. Dynamic Knowledge Updates:
 
-- Periodically fetches new content from predefined sources.
-
-- Parses and cleans RSS feed data to extract meaningful text without HTML tags.
+    - Periodically fetches new content from predefined sources.
+    
+    - Parses and cleans RSS feed data to extract meaningful text without HTML tags.
 
 2. Vector-Based Search:
 
-- Encodes content into high-dimensional vector representations using the SentenceTransformer model.
-
-- Stores these vectors in a FAISS index for efficient similarity search.
+    - Encodes content into high-dimensional vector representations using the SentenceTransformer model.
+    
+    - Stores these vectors in a FAISS index for efficient similarity search.
 
 3. User-Friendly Interface:
 
-- Interactive query system built using Streamlit.
-
-- Displays search results with relevance scores.
+    - Interactive query system built using Streamlit.
+    
+    - Displays search results with relevance scores.
 
 4. Scalable and Persistent:
 
-- FAISS index and metadata are persisted to disk for reuse across sessions.
-
-- Scheduled updates ensure the knowledge base remains current.
+    - FAISS index and metadata are persisted to disk for reuse across sessions.
+    
+    - Scheduled updates ensure the knowledge base remains current.
 
 ## Technologies Used
 
@@ -66,29 +66,29 @@ This project implements a dynamic knowledge base system that fetches, processes,
 
 1. Data Fetching:
 
-- The system fetches data from predefined RSS feeds.
-
-- It parses the feed to extract titles and descriptions, ensuring all HTML tags are stripped for clean text.
+    - The system fetches data from predefined RSS feeds.
+    
+    - It parses the feed to extract titles and descriptions, ensuring all HTML tags are stripped for clean text.
 
 2. Data Processing:
 
-- Extracted text is encoded into vector embeddings using a pre-trained SentenceTransformer model.
-
-- Embeddings are added to a FAISS index for fast similarity search.
+    - Extracted text is encoded into vector embeddings using a pre-trained SentenceTransformer model.
+    
+    - Embeddings are added to a FAISS index for fast similarity search.
 
 3. Knowledge Base Updates:
 
-- The apscheduler library periodically triggers updates to fetch and process new data.
-
-- The FAISS index and metadata are saved to disk to ensure persistence across sessions.
+    - The apscheduler library periodically triggers updates to fetch and process new data.
+    
+    - The FAISS index and metadata are saved to disk to ensure persistence across sessions.
 
 4. Query System:
 
-- Users input a query in the Streamlit interface.
-
-- The query is encoded and compared against the FAISS index to retrieve the most relevant entries.
-
-- Results are displayed with relevance scores.
+    - Users input a query in the Streamlit interface.
+    
+    - The query is encoded and compared against the FAISS index to retrieve the most relevant entries.
+    
+    - Results are displayed with relevance scores.
 
 ## Usage
 
