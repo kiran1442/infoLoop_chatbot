@@ -48,7 +48,7 @@ This project implements a dynamic knowledge base system that fetches, processes,
 
 <!--start code-->
 
-Install dependencies:
+1. Install dependencies:
 
     pip install -r requirements.txt
     
@@ -56,7 +56,7 @@ Install dependencies:
 
 <!--start code-->
 
-Run the Streamlit app:
+2. Run the Streamlit app:
 
     streamlit run app.py
     
